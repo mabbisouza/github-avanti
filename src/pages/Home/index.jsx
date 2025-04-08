@@ -49,17 +49,17 @@ export default function Home() {
       <div className={styles.background} />
 
       <img
-        src="src\assets\ellipse-1.png"
+        src="\assets\ellipse-1.png"
         alt="ellipse-1"
         className={styles.gradient1}
       />
       <img
-        src="src\assets\ellipse-2.png"
+        src="\assets\ellipse-2.png"
         alt="ellipse-2"
         className={styles.gradient2}
       />
       <img
-        src="src\assets\camada_1.png"
+        src="\assets\square.png"
         alt="square"
         className={styles.squareGradient}
       />
@@ -67,14 +67,14 @@ export default function Home() {
       <div className={styles.mainContent}>
         <div className={styles.titleWrapper}>
           <img
-            src="src\assets\github-logo.png"
+            src="\assets\github-logo.png"
             alt="github-logo"
             className={styles.gitImage}
           />
           <div className={styles.gitWrapper}>
             <p className={styles.gitTitle}>Perfil</p>
             <img
-              src="src\assets\github.png"
+              src="\assets\github.png"
               alt="github-text"
               className={styles.gitWriting}
             />
