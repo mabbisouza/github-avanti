@@ -1,0 +1,207 @@
+.mainContainer {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  background-color: #000000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.squareGradient {
+  position: fixed;
+  left: 10%;
+  top: 10%;
+}
+.gradient1 {
+  position: fixed;
+  top: 0;
+  right: -12px;
+}
+
+.gradient2 {
+  position: fixed;
+  left: 0;
+  bottom: -10px;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  min-height: 550px;
+  width: 100%;
+  max-width: 1200px;
+  z-index: 5;
+  background-color: #000000;
+  align-items: center;
+  padding: 32px;
+  gap: 16px;
+
+  @media screen and (max-width: 1200px) {
+    max-width: 800px;
+  }
+
+  @media screen and (max-width: 700px) {
+    min-height: 700px;
+  }
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  padding: 24px 0px;
+}
+
+.gitImage {
+  height: 56px;
+  width: 56px;
+}
+
+.gitTitle {
+  color: #ffffff;
+  font-size: 3rem;
+  font-family: "Nunito Sans";
+}
+
+.gitWriting {
+  height: 38px;
+  width: 150px;
+}
+
+.gitWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+}
+
+.inputWrapper {
+  display: flex;
+  text-align: center;
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+}
+
+.searchInput {
+  width: 100%;
+  height: 64px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 600;
+  padding-left: 12px;
+  font-family: "Nunito Sans";
+
+  padding-right: 80px;
+  &:focus {
+    outline: 2px solid var(--blue-color-500);
+  }
+}
+
+.searchButton {
+  border: none;
+  width: 62px;
+  height: 62px;
+  border-radius: 8px;
+  font-size: 2rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  background-color: var(--blue-color-500);
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  font-family: "Nunito Sans";
+
+  &:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.searchContainer {
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+}
+
+.userCardWrapper {
+  display: flex;
+  align-items: center;
+  background-color: #d9d9d9;
+  border-radius: 24px;
+  padding: 12px;
+  width: 100%;
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+  }
+}
+.userImage {
+  display: flex;
+  border-radius: 100%;
+  height: 200px;
+  min-width: 200px;
+  border: 2px solid var(--blue-color-500);
+}
+
+.cardUserText {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+  width: 100%;
+  max-width: 100%;
+
+  @media screen and (max-width: 700px) {
+    text-align: center;
+  }
+}
+
+.userName {
+  color: var(--blue-color-500);
+  font-size: 1.1rem;
+  font-family: "Nunito Sans";
+  font-weight: 700;
+}
+
+.userBio {
+  font-family: "Nunito Sans";
+  font-size: 0.9rem;
+}
+
+.errorMessage {
+  background-color: #d9d9d9;
+  color: rgb(255, 0, 0);
+  width: 100%;
+  max-width: 550px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  display: flex;
+  height: 88px;
+  font-family: "Nunito Sans";
+}
