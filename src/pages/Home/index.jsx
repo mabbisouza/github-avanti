@@ -72,7 +72,12 @@ export default function Home() {
             className={styles.gitImage}
           />
           <div className={styles.gitWrapper}>
-            <p className={styles.gitTitle}>Perfil</p>
+            <p className={styles.gitTitle}>
+              Perfi
+              <span style={{ fontFamily: "sans-serif", fontWeight: 500 }}>
+                l
+              </span>
+            </p>
             <img
               src="\assets\github.png"
               alt="github-text"
@@ -144,7 +149,9 @@ export default function Home() {
             )}
 
             {!loading && errorMessage && (
-              <p className={styles.errorMessage}>{errorMessage}</p>
+              <div className={styles.errorMessage}>
+                <p>{errorMessage}</p>
+              </div>
             )}
           </>
         </div>
